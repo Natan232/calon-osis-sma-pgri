@@ -1,0 +1,100 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background & typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1d3557, #457b9d); /* Biru gradient untuk energi dan ketenangan */
+    color: #fff; /* Teks berwarna putih untuk kontras */
+}
+
+header {
+    background-color: #fca311; /* Warna kuning-oranye untuk menarik perhatian, menciptakan suasana dinamis */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.profile {
+    background: rgba(255, 255, 255, 0.1); /* Memberikan efek transparan */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fca311; /* Garis tepi yang serasi dengan header */
+}
+
+.profile h2 {
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 80%;
+    background-color: #457b9d; /* Warna biru yang sama dengan background, dengan sedikit transparansi */
+    color: #fff;
+}
+
+.visions, .missions {
+    margin-bottom: 30px;
+}
+
+.visions ul, .missions ol {
+    padding-left: 20px;
+}
+
+.visions ul li, .missions ol li {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #fca311;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profiles {
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
